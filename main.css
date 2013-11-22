@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+#orange{
+	background-color:#FC6;
+}
+#white{
+	background-color:#FFF;
+}
+.image{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+	
+.image_margin{
+	margin:10px;
+}
+#block{
+	display:block;
+	margin-bottom:100px;
+	margin-top:100px;
+}
+#my_map{
+ height: 350px;
+ width: 600px;
+}
