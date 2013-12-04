@@ -1,44 +1,11 @@
-<!doctype html>
+<!DOCTYPE html> 
 <html>
 <head>
 <meta charset="UTF-8">
 <title>HurryBuy</title>
-<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-<script src="js/phonegap.js"></script>
-
-<!--<script>
-var count=0;
-$("#minus").click(function() {
-	if ($("#number").html()>0){
-    count--;
-    $("#number").html(+count);
-	}
-})
-$("#add").click(function() {
-    count++;
-    $("#number").html(+count);
-})
-</script>-->
-<script
-src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBCBFl8jvNz1Cb7QbVhXsYhOcOUcWXelcQ&sensor=false">
-</script>
-
-<script>
-function initialize()
-{
-var mapProp = {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-
-</script>
-
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 <style>
 #googleMap{
  height: 500px;
@@ -64,32 +31,40 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 	margin-bottom:100px;
 	margin-top:100px;
 }
+.pages{
+	width: 314px;
+	height:442px;
+}
 </style>
-</head>
+</head> 
 
-<body>
+<body> 
+
 <!first page>
-<div data-role="page" id = "page1">
+<div data-role="page" id = "page1" class="pages">
     <div data-role="header">
    <h1>HurryBuy</h1>
    </div>
     <div data-role = "content" id="orange">
-    <p><img class="image" src="IMG/logo.png" alt = "HurryBuy" width="467"    height="94" align = "middle"></p>
-    <p><img class="image" src="IMG/icon.png" alt = "Icon" width = "285" height = "255" scr = "icon.png"></p>
-     <p><a href="#page2"><img class="image" src="IMG/start_button.png"></a></p>
+    <p><img class="image" src="IMG/logo.png" alt = "HurryBuy" width="297"    height="61" align = "middle"></p>
+    <p><img class="image" src="IMG/icon.png" alt = "Icon" width = "188" height = "173" scr = "icon.png"></p>
+     <p><a href="#page2"><img src="IMG/start_button.png" width="188" height="52" class="image"></a></p>
      </div>
+         <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
+   </div>
 </div>
 
 <!second page>
-<div data-role="page" id="page2">
+<div data-role="page" id="page2" class="pages">
    <div data-role="header">
    <h1>HurryBuy</h1>
    </div>
    <div data-role="content" id="white">
-  <p><img class="image" src="IMG/logo2.png" width="352" height="48"  alt=""/></p>
+  <p><img class="image" src="IMG/logo2.png" width="300" height="37"  alt=""/></p>
    <div align="center">
-   <a href="#page1"><img src="IMG/back_button.png" width="101"    height="96"  alt=""/></a>
-   <img src="IMG/current_location.png" width="356" height="96">
+   <a href="#page1"><img src="IMG/back_button.png" width="59"    height="55"  alt=""/></a>
+   <img src="IMG/current_location.png" width="247" height="54">
    </div>
    <table align="center">
    <tr>
@@ -98,8 +73,11 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    </tr>
    </table>
    <p align="center"><a href="#page3">click here to the next page(Aleksi, please add the map API here :)</a></p>
- <div align="center"id="googleMap"></div>
+ <div align="center"id="googleMap">ß</div>
 </div>
+         <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
+   </div>
 </div>
 
 <!third page>
@@ -108,14 +86,17 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    <h1>HurryBuy</h1>
    </div>
    <div data-role="conetent" id="white">
-   <p><img class="image" src="IMG/logo2.png" width="352" height="48"  alt=""/></p>
+   <div><img class="image" src="IMG/logo2.png" width="298" height="41"  alt=""/></div>
    <div align="center">
-   <a href="#page2"><img src="IMG/back_button1.png" width="101" height="96"  alt=""/></a>
-   <img src="IMG/selected_shop.png" width="356" height="96"></div>
+   <a href="#page2"><img src="IMG/back_button1.png" width="51" height="48"  alt=""/></a>
+   <img src="IMG/selected_shop.png" width="244" height="50"></div>
    <div align="center" id="block">
-   <a href="#new shopping"><img src="IMG/shopping_list-20.png" width="164" height="164" class="image_margin"></a>
-   <a href="#my shopping list"><img src="IMG/shopping_list-19.png" width="170" height="169" class="image_margin"></a>
+   <a href="#new shopping"><img src="IMG/shopping_list-20.png" width="93" height="93" class="image_margin"></a>
+   <a href="#my shopping list"><img src="IMG/shopping_list-19.png" width="93" height="93" class="image_margin"></a>
    </div>
+   </div>
+            <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
    </div>
 </div>
 
@@ -125,16 +106,19 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    <h1>HurryBuy</h1>
    </div>
    <div data-role="conetent" id="white">
-   <p><img class="image" src="IMG/logo2.png" width="352" height="48"  alt=""/></p>
+   <p><img class="image" src="IMG/logo2.png" width="300" height="38"  alt=""/></p>
    <div align="center">
-   <a href="#page3"><img src="IMG/back_button2.png" width="101" height="96"  alt=""/></a>
-   <img src="IMG/my_shopping_list_bar.png" width="356" height="96"></div>
+   <a href="#page3"><img src="IMG/back_button2.png" width="47" height="44"  alt=""/></a>
+   <img src="IMG/my_shopping_list_bar.png" width="277" height="48"></div>
    <div align ="center">
-   <a href="#list1"><img src="IMG/shopping_list_bar-25.png" class=image_margin"></a><br>
-   <a href="#list2"><img src="IMG/shopping_list_bar-26.png" class=image_margin"></a><br>
-   <a href="#list3"><img src="IMG/shopping_list_bar-27.png" class=image_margin"></a><br>
-   <a href="#list4"><img src="IMG/shopping_list_bar-28.png" class=image_margin"></a>
+   <a href="#list1"><img src="IMG/shopping_list_bar-25.png" width="297" height="40" class=image_margin"></a><br>
+   <a href="#list2"><img src="IMG/shopping_list_bar-26.png" width="298" height="38" class=image_margin"></a><br>
+   <a href="#list3"><img src="IMG/shopping_list_bar-27.png" width="298" height="37" class=image_margin"></a><br>
+   <a href="#list4"><img src="IMG/shopping_list_bar-28.png" width="298" height="42"></a>
    </div>
+   </div>
+  <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
    </div>
 </div>
 
@@ -146,18 +130,21 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    <h1>HurryBuy</h1>
    </div>
    <div data-role="conetent" id="white">
-   <p><img class="image" src="IMG/logo2.png" width="352" height="48"  alt=""/></p>
+   <p><img class="image" src="IMG/logo2.png" width="300" height="40"  alt=""/></p>
    <div align="center">
-   <a href="#page3"><img src="IMG/back_button1.png" width="101" height="96"  alt=""/></a>
-   <img src="IMG/new_shop_bar.png" width="356" height="96"></div>
+   <a href="#page3"><img src="IMG/back_button1.png" width="55" height="59"  alt=""/></a>
+   <img src="IMG/new_shop_bar.png" width="241" height="58"></div>
   <div align="center">
-   <a href="#fish"><img src="IMG/category-21.png" width="164" height="164" class="image_margin"></a>
-   <a href="#meat"><img src="IMG/category-22.png" width="168" height="164" class="image_margin"></a><br>
-   <a href="#vegetables"><img src="IMG/category-23.png" width="168" height="164" class="image_margin"></a>
-   <a href="#drinks"><img src="IMG/category-24.png" width="168" height="164" class="image_margin"></a><br>
-   <a href="#dairy"><img src="IMG/category-25.png" width="168" height="164" class="image_margin"></a>
-   <a href="#hygiene"><img src="IMG/category-26.png" width="168" height="164" class="image_margin"></a>
+   <a href="#fish"><img src="IMG/category-21.png" width="100" height="100" class="image_margin"></a>
+   <a href="#meat"><img src="IMG/category-22.png" width="100" height="100" class="image_margin"></a><br>
+   <a href="#vegetables"><img src="IMG/category-23.png" width="100" height="100" class="image_margin"></a>
+   <a href="#drinks"><img src="IMG/category-24.png" width="100" height="100" class="image_margin"></a><br>
+   <a href="#dairy"><img src="IMG/category-25.png" width="100" height="100" class="image_margin"></a>
+   <a href="#hygiene"><img src="IMG/category-26.png" width="100" height="100" class="image_margin"></a>
    </div>
+   </div>
+            <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
    </div>
 </div>
 
@@ -169,34 +156,39 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    <div data-role="conetent" id="white">
    <p><img class="image" src="IMG/logo2.png" width="352" height="48"  alt=""/></p>
    <div align="center">
-   <a href="#new shopping"><img src="IMG/back_button1.png" width="101" height="96"  alt=""/></a>
-   <img src="IMG/hygiene.png" width="356" height="96">
+   <a href="#new shopping"><img src="IMG/back_button1.png" width="53" height="52"  alt=""/></a>
+   <img src="IMG/hygiene.png" width="234" height="52">
    <p><input type="button" value="-" id="minus"><div id="number">0</div><input type="button" value="+" id="add"></p>
-   
    </div>
    <br><br>
-   <a href="#check out"><img src="IMG/ok_button.png" class="image"></a>
+   <a href="#check out"><img src="IMG/ok_button.png" height="78" class="image"></a>
+   </div>
+            <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
    </div>
    </div>
    
 <!Check out>
 <div data-role="page" id="check out">
  <div data-role="header">
-   <h1>HurryBu   </h1>
+   <h1>HurryBuy</h1>
  </div>
  <div data-role="content"id="white">
- <p><img class="image" src="IMG/logo2.png" width="352" height="48"  alt=""/></p>
+ <p><img class="image" src="IMG/logo2.png" width="299" height="42"  alt=""/></p>
 <div align="center">
   <h1>Have you finished your shopping?</h1>
   <img src="IMG/check_out_list.png" width="297" height="296" class="image">
   <table align="center">
   <tr>
-   <td><a href="#finish"><img src="IMG/yes_button.png" width="194" height="65" class="image"></a> </td>
-   <td><a href="#new shopping"><img src="IMG/no_button.png" width="194" height="65" class="image"></a></td>
+   <td><a href="#finish"><img src="IMG/yes_button.png" width="117" height="44" class="image"></a> </td>
+   <td><a href="#new shopping"><img src="IMG/no_button.png" width="139" height="43" class="image"></a></td>
    </tr>
    </table>
   </div>
   </div>
+           <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
+   </div>
   </div>
   
  <!finish page>
@@ -205,13 +197,17 @@ var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    <h1>HurryBuy</h1>
    </div>
    <div data-role="content" align="center" id="orange">
-   <p><img class="image" src="IMG/logo1.png" width="352" height="48"  alt=""/><br><img class="image" src="IMG/almost_finished_bar.png" width="352" height="48"  alt=""/></p>
+   <p><img class="image" src="IMG/logo1.png" width="295" height="41"  alt=""/><br><img class="image" src="IMG/almost_finished_bar.png" width="292" height="40"  alt=""/></p>
    <p><h2>Your shopping will be ready at...</h2><p>
-   <img class="image" src="IMG/icon.png">
-   <p><img class="image" src="IMG/time_bar.png"></p>
-   <p><a href="#page1"><img src="IMG/ok_button.png" width="271" height="103" class="image" scr="IMG/ok_button.png"></a></p>
+   <img src="IMG/icon.png" width="197" height="211" class="image">
+   <p><img src="IMG/time_bar.png" width="197" height="56" class="image"></p>
+   <p><a href="#page1"><img src="IMG/ok_button.png" width="201" height="65" class="image" scr="IMG/ok_button.png"></a></p>
+   </div>
+            <div data-role="footer">
+   <h1>Copyright © Smart Team</h1>
    </div>
  </div>
+
 
 </body>
 </html>
